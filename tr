@@ -1,0 +1,24 @@
+#Encoding : utf-8
+require"/home/lumen/Рабочий стол/programming/r_assist"
+class Poly
+attr_accessor :a, :h
+def initialize (a,h)
+@a = a
+@h = h
+end
+def S
+f = a*h/2
+end
+end
+class Del < Poly  def initialize (a,h)
+@a = a
+@h = h
+end
+end
+puts "Введите а и h"
+print "a: "
+a = getsi
+print "h: "
+h = getsi
+tr = Del.new(a,h)
+puts tr.S()
